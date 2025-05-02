@@ -1,0 +1,20 @@
+/* 画面幅が769px以上では必要無いので[display: none;]で非表示にしている */
+.sp-block {
+  display: none;
+}
+
+/* 画面幅が768px以下の時に下記が追加で適用される */
+@media screen and (max-width: 768px) {
+
+  /* 画面幅が768px以下では必要無いので[display: none;]で非表示にしている */
+  .pc-block {
+    display: none;
+  }
+
+  /* 画面幅が768px以下では必要ので[display: block;]で表示させている */
+  .sp-block {
+    display: block;
+  }
+}
+
+/* 画面幅が768px以下の時に上記が追加で適用される */
