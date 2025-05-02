@@ -6,13 +6,13 @@
 ## 重要
 
 - CSS は全ての画面幅で適用されるがメディアクエリーは、**追加**で適用されるという事
-- [@media screen and (max-width: [＊＊＊]px)]の、[＊＊＊]の数字以下の画面幅の時に追加で適用される]
+- [@media screen and (max-width: [＊＊＊]px)]の、[＊＊＊]の数字以下の画面幅の時に追加で適用される
 
 ## 記述場所
 
 - style.css の中に記述する
 
-###　記述方法
+### 記述方法
 
 ```
 @media screen and (max-width: 768px) {
