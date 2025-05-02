@@ -1,0 +1,92 @@
+/* headerの横幅の最大幅を設定 */
+header {
+  max-width: 1080px;
+}
+
+/* headerを画面の真ん中にする */
+header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* headerの直下を横並びにする */
+header {
+  display: flex;
+}
+
+/* 横並びにしたものを左右それぞれの端に配置 */
+header {
+  justify-content: space-between;
+}
+
+/* liタグの「・」を消す */
+#nav-pc ul {
+  list-style-type: none;
+}
+
+/* PCのメニューを横並びにする */
+#nav-pc ul {
+  display: flex;
+}
+
+/* PCのメニューを横並びにしたものの隙間を空ける */
+#nav-pc ul {
+  gap: 1em;
+}
+
+/* PCデザインに必要じゃないもの　ここから↓ */
+/* ハンバーガーメニューの開くボタンを非表示にする */
+#menu-sp {
+  display: none;
+}
+
+/* ハンバーガーメニューの中身を非表示にする */
+#nav-sp {
+  display: none;
+}
+
+/* PCデザインに必要じゃないもの　ここまで↑ */
+
+/* 画面幅が768以下になった時に追加で適用されるようにしたい */
+@media screen and (max-width: 768px) {
+
+  /* PC用のメニューを非表示にしたい */
+  #nav-pc {
+    display: none;
+  }
+
+  /* ハンバーガーメニューを表示させたい */
+  /* liタグの「・」を消す */
+  #nav-sp ul {
+    list-style: none;
+  }
+
+  /* spのメニューのaタグの色を変える */
+  #nav-sp a {
+    color: white;
+  }
+
+
+  /* ハンバーガーメニューの開くボタンを非表示にする */
+  #menu-sp {
+    display: block;
+  }
+
+  /* ハンバーガーメニューの中身を画面全体に更に重なり順を再上面に設置する */
+  #nav-sp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: blue;
+  }
+
+  /* ハンバーガーメニューの閉じるボタン */
+  #close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+}
