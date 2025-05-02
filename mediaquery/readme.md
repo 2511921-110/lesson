@@ -12,7 +12,7 @@
 
 - style.css の中に記述する
 
-### 記述方法
+## 記述方法
 
 ```
 @media screen and (max-width: 768px) {
