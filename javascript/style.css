@@ -1,0 +1,39 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  counter-increment: num;
+}
+
+ul li::before {
+  content: counter(num, decimal-leading-zero) ".";
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+}
+
+
+ul li::after {
+  content: counter(num) "つ目";
+}
+
+ol li {
+  /* color: red;
+  font-weight: bold; */
+}
+
+ol li::first-letter {
+  /* font-size: 50px; */
+  color: red;
+  font-weight: bold;
+}
+
+.numb span {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+}
