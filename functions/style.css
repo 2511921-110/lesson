@@ -1,0 +1,45 @@
+/* 四則演算 */
+/* 足し算(+) */
+/* 掛け算(*) */
+/* 引き算(-) */
+/* 割り算(/) */
+
+.hoge {
+  width: calc(100% / 4);
+  width: 25%;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 5%; */
+  gap: calc((41 / 1223) * 100%);
+  max-width: 1223px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  /* width: 25%; */
+  /* width: calc((100% - 15%) / 4); */
+  width: 100%;
+  max-width: calc((478 / 1223) * 100%);
+  aspect-ratio: 3/2;
+  background-color: blue;
+  border: 1px solid #000;
+}
+
+.content {
+  width: 100%;
+  max-width: calc((703 / 1223) * 100%);
+}
+
+@media screen and (max-width: 767px) {
+
+  .item,
+  .content {
+    max-width: 100%;
+  }
+}
